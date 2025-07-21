@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoItalic";
+    src: url("../fonts/RobotoItalic.ttf");
+}
+
+@font-face {
+    font-family: "RobotoExtraBold";
+    src: url("../fonts/RobotoExtraBold.ttf");
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* HEADER: ELVIRA */
+
+
+
+/* MAIN: EUGENE */
+.about-title {
+    font-family: "RobotoExtraBold", sans-serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.about-content-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.about-content-item {
+    width: 120px;
+    height: 150px;
+    text-align: center;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 10px;
+    color: #727273;
+}
+
+.about-content-item img {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 70px 200px;
+    font-family: "RobotoItalic", sans-serif;
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 60px;
+}
+
+.quote p {
+    text-align: end;
+    font-family: "RobotoBold", sans-serif;
+}
+
+
+/* FOOTER: NIELEN*/
