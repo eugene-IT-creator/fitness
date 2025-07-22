@@ -83,8 +83,8 @@
 /* FOOTER: NIELEN*/
 .action {
     background-color: #3882F6;
-    border-radius: 10px;
     color: #E5E7EB;
+    border-radius: 10px;
     padding: 50px 100px;
     max-width: 750px;
     margin: 0 auto;
@@ -105,20 +105,20 @@
 .action-info p {
     font-family: "RobotoRegular", sans-serif;
 }
-.container > button {
+.container > .sign-up-link {
     all: unset;
+    background-color: inherit;
     color: inherit;
+    border-radius: 5px;
     padding: 3.5px 20px;
     border: 2px solid #E5E7EB;
-    border-radius: 5px;
-    background-color: #3882F6;
-    transition: background-color 0.3s ease;
-    transition: scale 0.3s ease;
     font-family: "RobotoBold", sans-serif;
     font-size: 15px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: scale 0.3s ease;
 }
-.container > button:hover {
+.container > .sign-up-link:hover {
     background-color: #E5E7EB;
     color: #3882F6;
     scale: 105%;
