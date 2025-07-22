@@ -93,6 +93,12 @@ main {
     margin: 10px 0px;
 }
 
+button {
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 18px;
+}
+
 
 /* MAIN: EUGENE */
 .about-title {
