@@ -1,3 +1,10 @@
+:root{
+    --blue: #1F2937;
+    --white: #F9FAF8;
+    --gray: #E5E7EB;
+    --lightblue: #3882F6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +37,67 @@
 
 /* HEADER: ELVIRA */
 
+header {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-family: "RobotoExtraBold", sans-serif;
+    color: var(--white);
+}
+
+.header-menu menu{
+    display: flex;
+    flex-direction: row;
+    font-family: "RobotoRegular", sans-serif;
+}
+
+
+header .header-menu li {
+    list-style-type: none;
+}
+
+header .header-menu li>a {
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+}
+main {
+    background-color: var(--blue);
+    font-family: "RobotoRegular", sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content-info {
+    align-content: center;
+    padding: 2%;
+}
+
+.main-content-info h1 {
+   font-size: 48px; 
+   font-family: "RobotoExtraBold", sans-serif;
+   color: var(--white);
+   margin: 5px 0px;
+}
+
+.main-content-info p {
+    font-size: 18px;
+    color: var(--gray);
+    margin: 10px 0px;
+}
+
+button {
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 18px;
+}
 
 
 /* MAIN: EUGENE */
@@ -74,7 +142,7 @@
     margin-bottom: 60px;
 }
 
-.quote p {
+.quote cite {
     text-align: end;
     font-family: "RobotoBold", sans-serif;
 }
