@@ -81,3 +81,58 @@
 
 
 /* FOOTER: NIELEN*/
+section.action {
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: #E5E7EB;
+    padding: 50px 100px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+section.action > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-info h4 {
+    font-family: "RobotoExtraBold", sans-serif;
+}
+
+.action-info p {
+    font-family: "RobotoRegular", sans-serif;
+}
+.container > button {
+    all: unset;
+    color: inherit;
+    padding: 3px 20px;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    background-color: #3882F6;
+    transition: background-color 0.3s ease;
+    transition: scale 0.3s ease;
+    font-family: "RobotoBold", sans-serif;
+    cursor: pointer;
+}
+.container > button:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
+    scale: 105%;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-family: "RobotoRegular", sans-serif;
+}
+
