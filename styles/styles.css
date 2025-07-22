@@ -37,6 +37,34 @@
 
 /* HEADER: ELVIRA */
 
+header {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-family: "RobotoExtraBold", sans-serif;
+    color: var(--white);
+}
+
+.header-menu menu{
+    display: flex;
+    flex-direction: row;
+    font-family: "RobotoRegular", sans-serif;
+}
+
+
+header .header-menu li {
+    list-style-type: none;
+}
+
+header .header-menu li>a {
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+}
 
 
 /* MAIN: EUGENE */
