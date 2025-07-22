@@ -81,3 +81,60 @@
 
 
 /* FOOTER: NIELEN*/
+.action {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 10px;
+    padding: 50px 100px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.action > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-info h4 {
+    font-family: "RobotoExtraBold", sans-serif;
+    font-size: 18px;
+}
+
+.action-info p {
+    font-family: "RobotoRegular", sans-serif;
+}
+.container > .sign-up-link {
+    all: unset;
+    background-color: inherit;
+    color: inherit;
+    border-radius: 5px;
+    padding: 3.5px 20px;
+    border: 2px solid #E5E7EB;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: scale 0.3s ease;
+}
+.container > .sign-up-link:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
+    scale: 105%;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-family: "RobotoRegular", sans-serif;
+}
+
