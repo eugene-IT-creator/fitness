@@ -81,7 +81,7 @@
 
 
 /* FOOTER: NIELEN*/
-section.action {
+.action {
     background-color: #3882F6;
     border-radius: 10px;
     color: #E5E7EB;
@@ -91,7 +91,7 @@ section.action {
     margin-bottom: 60px;
 }
 
-section.action > .container {
+.action > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +99,7 @@ section.action > .container {
 
 .action-info h4 {
     font-family: "RobotoExtraBold", sans-serif;
+    font-size: 18px;
 }
 
 .action-info p {
@@ -107,13 +108,14 @@ section.action > .container {
 .container > button {
     all: unset;
     color: inherit;
-    padding: 3px 20px;
+    padding: 3.5px 20px;
     border: 2px solid #E5E7EB;
     border-radius: 5px;
     background-color: #3882F6;
     transition: background-color 0.3s ease;
     transition: scale 0.3s ease;
     font-family: "RobotoBold", sans-serif;
+    font-size: 15px;
     cursor: pointer;
 }
 .container > button:hover {
