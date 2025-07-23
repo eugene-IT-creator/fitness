@@ -89,7 +89,7 @@ header .header-menu li>a {
 .header-content-info p {
     font-size: 18px;
     color: var(--gray);
-    margin: 10px 0px;
+    padding: 10px 0px;
 }
 
 button {
