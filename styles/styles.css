@@ -63,7 +63,6 @@ header {
 
 header .header-menu li {
     list-style-type: none;
-    margin: 0px 10px;
 }
 
 header .header-menu li>a {
@@ -251,6 +250,7 @@ footer p {
         gap: 15px;
     }
     .header-content {
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
