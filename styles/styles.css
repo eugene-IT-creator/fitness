@@ -129,24 +129,24 @@ header .header-menu li>a {
     text-align: center;
     font-family: "RobotoBold", sans-serif;
     font-size: 10px;
-    color: #727273;
+    color: var(--blue);
 }
 
 .about-content-item img {
     width: 90px;
     height: 90px;
-    border: 3px solid #3882F6;
+    border: 3px solid var(--lightblue);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 5px;
 }
 
 .quote {
-    background-color: #E5E7EB;
+    background-color: var(--gray);
     padding: 70px 200px;
     font-family: "RobotoItalic", sans-serif;
     font-size: 36px;
-    color: #1F2937;
+    color: var(--blue);
     margin-bottom: 60px;
 }
 
