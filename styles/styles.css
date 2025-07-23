@@ -39,7 +39,6 @@
 
 header {
     background-color: var(--blue);
-    padding: 0% 10%;
 }
 
 .header-content-navigation {
@@ -64,6 +63,7 @@ header {
 
 header .header-menu li {
     list-style-type: none;
+    margin: 0px 10px;
 }
 
 header .header-menu li>a {
