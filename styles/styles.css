@@ -39,6 +39,7 @@
 
 header {
     background-color: var(--blue);
+    padding: 0% 10%;
 }
 
 .header-content-navigation {
@@ -63,6 +64,7 @@ header {
 
 header .header-menu li {
     list-style-type: none;
+    margin: 0px 10px;
 }
 
 header .header-menu li>a {
@@ -71,16 +73,25 @@ header .header-menu li>a {
     text-decoration: none;
 }
 
+.header-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10% 0%;;
+    justify-content:space-around;
+}
+.header-content img {
+    width: 100%;
+}
+
 .header-content-info {
     align-content: center;
-    padding: 2%;
 }
 
 .header-content-info h1 {
    font-size: 48px; 
    font-family: "RobotoExtraBold", sans-serif;
    color: var(--white);
-   margin: 5px 0;
+   padding: 5px 0;
 }
 
 .header-content-info p {
@@ -89,10 +100,11 @@ header .header-menu li>a {
     padding: 10px 0px;
 }
 
-button {
+.header-content-info > .container a {
     background-color: var(--lightblue);
     color: var(--white);
     font-size: 18px;
+    border: 0px;
 }
 
 
@@ -139,7 +151,8 @@ button {
 }
 
 .quote cite {
-    text-align: end;
+    display: block;
+    text-align: right;
     font-family: "RobotoBold", sans-serif;
 }
 
