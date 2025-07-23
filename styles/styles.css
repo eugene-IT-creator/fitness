@@ -39,8 +39,16 @@
 
 header {
     background-color: var(--blue);
+}
+
+.header-content-navigation {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -65,29 +73,20 @@ header .header-menu li>a {
     font-size: 18px;
     text-decoration: none;
 }
-main {
-    background-color: var(--blue);
-    font-family: "RobotoRegular", sans-serif;
-}
 
-.main-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.main-content-info {
+.header-content-info {
     align-content: center;
     padding: 2%;
 }
 
-.main-content-info h1 {
+.header-content-info h1 {
    font-size: 48px; 
    font-family: "RobotoExtraBold", sans-serif;
    color: var(--white);
    margin: 5px 0px;
 }
 
-.main-content-info p {
+.header-content-info p {
     font-size: 18px;
     color: var(--gray);
     margin: 10px 0px;
