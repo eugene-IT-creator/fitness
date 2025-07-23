@@ -83,7 +83,7 @@ header .header-menu li>a {
    font-size: 48px; 
    font-family: "RobotoExtraBold", sans-serif;
    color: var(--white);
-   margin: 5px 0px;
+   margin: 5px 0;
 }
 
 .header-content-info p {
@@ -205,6 +205,46 @@ footer p {
     font-family: "RobotoRegular", sans-serif;
 }
 
+
+
+/* ABOUT PAGE: EUGENE */
+.aboutPage {
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.aboutPage-img {
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0.3;
+    position: relative;
+}
+
+.aboutPage-slogan {
+    position: absolute;
+    width: 800px;
+    top: 30%;
+    left: 25%;
+    font-size: 50px;
+    color: var(--white);
+    text-align: center;
+}
+
+.aboutPage-title {
+    font-size: 30px;
+    margin: 40px 0 30px 0;
+}
+
+.about article {
+    font-size: 20px;
+}
+
+.about article p:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+
+
 /* Media Queries */
 @media all and (max-width: 750px) {
     .header-content-navigation {
@@ -254,4 +294,3 @@ footer p {
 
     }
 }
-
