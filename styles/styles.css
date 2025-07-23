@@ -39,8 +39,16 @@
 
 header {
     background-color: var(--blue);
+}
+
+.header-content-navigation {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -65,29 +73,20 @@ header .header-menu li>a {
     font-size: 18px;
     text-decoration: none;
 }
-main {
-    background-color: var(--blue);
-    font-family: "RobotoRegular", sans-serif;
-}
 
-.main-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.main-content-info {
+.header-content-info {
     align-content: center;
     padding: 2%;
 }
 
-.main-content-info h1 {
+.header-content-info h1 {
    font-size: 48px; 
    font-family: "RobotoExtraBold", sans-serif;
    color: var(--white);
    margin: 5px 0px;
 }
 
-.main-content-info p {
+.header-content-info p {
     font-size: 18px;
     color: var(--gray);
     margin: 10px 0px;
@@ -150,11 +149,11 @@ button {
 
 /* FOOTER: NIELEN*/
 .action {
-    background-color: #3882F6;
-    color: #E5E7EB;
+    background-color: var(--lightblue);
+    color: var(--white);
     border-radius: 10px;
     padding: 50px 100px;
-    max-width: 750px;
+    max-width: 65%;
     margin: 0 auto;
     margin-bottom: 60px;
 }
@@ -179,7 +178,7 @@ button {
     color: inherit;
     border-radius: 5px;
     padding: 3.5px 20px;
-    border: 2px solid #E5E7EB;
+    border: 2px solid var(--white);
     font-family: "RobotoBold", sans-serif;
     font-size: 15px;
     cursor: pointer;
@@ -187,14 +186,14 @@ button {
     transition: scale 0.3s ease;
 }
 .container > .sign-up-link:hover {
-    background-color: #E5E7EB;
-    color: #3882F6;
+    background-color: var(--white);
+    color: var(--lightblue);
     scale: 105%;
 }
 
 footer {
-    background-color: #1F2937;
-    color: #E5E7EB;
+    background-color: var(--blue);
+    color: var(--white);
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -204,5 +203,55 @@ footer {
 
 footer p {
     font-family: "RobotoRegular", sans-serif;
+}
+
+/* Media Queries */
+@media all and (max-width: 750px) {
+    .header-content-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .about-content-items {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .quote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 25px;
+        padding: 20px 30px;
+    }
+}
+
+@media all and (max-width:750px) {
+    .action {
+        padding: 20px 50px;
+        max-width: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .action > .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+    }
 }
 
