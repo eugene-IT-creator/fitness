@@ -102,7 +102,6 @@ header .header-menu li > a:hover {
 
 .header-content-info p {
     font-size: 18px;
-    font-family: "RobotoRegular", sans-serif;
     color: var(--gray);
     padding: 10px 0px;
 }
