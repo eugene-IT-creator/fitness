@@ -1,4 +1,4 @@
-:root{
+:root {
     --blue: #1F2937;
     --white: #F9FAF8;
     --gray: #E5E7EB;
@@ -54,7 +54,7 @@ header {
     color: var(--white);
 }
 
-.header-menu menu{
+.header-menu menu {
     display: flex;
     flex-direction: row;
     font-family: "RobotoRegular", sans-serif;
@@ -66,20 +66,27 @@ header .header-menu li {
     margin: 0px 10px;
 }
 
-header .header-menu li>a {
+header .header-menu li > a {
     color: var(--white);
     font-size: 18px;
     text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+header .header-menu li > a:hover {
+    color: var(--lightblue);
 }
 
 .header-content {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 10% 0%;;
-    justify-content:space-around;
+    justify-content: space-around;
 }
+
 .header-content img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .header-content-info {
@@ -87,10 +94,10 @@ header .header-menu li>a {
 }
 
 .header-content-info h1 {
-   font-size: 48px; 
-   font-family: "RobotoExtraBold", sans-serif;
-   color: var(--white);
-   padding: 5px 0;
+    font-size: 48px;
+    font-family: "RobotoExtraBold", sans-serif;
+    color: var(--white);
+    padding: 5px 0;
 }
 
 .header-content-info p {
@@ -181,6 +188,7 @@ header .header-menu li>a {
 .action-info p {
     font-family: "RobotoRegular", sans-serif;
 }
+
 .container > .sign-up-link {
     all: unset;
     background-color: inherit;
@@ -194,6 +202,7 @@ header .header-menu li>a {
     transition: background-color 0.3s ease;
     transition: scale 0.3s ease;
 }
+
 .container > .sign-up-link:hover {
     background-color: var(--white);
     color: var(--lightblue);
@@ -207,7 +216,6 @@ footer {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 5px;
 }
 
 footer p {
@@ -215,8 +223,12 @@ footer p {
 }
 
 
-
 /* ABOUT PAGE: EUGENE */
+.about-header {
+    display: block;
+    padding: 0;
+}
+
 .aboutPage {
     margin-bottom: 50px;
     padding: 0 20px;
@@ -224,16 +236,17 @@ footer p {
 
 .aboutPage-img {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0 30px 0;
     opacity: 0.3;
     position: relative;
+    border-radius: 15px;
 }
 
 .aboutPage-slogan {
     position: absolute;
-    width: 800px;
+    width: 1000px;
     top: 30%;
-    left: 25%;
+    left: 24%;
     font-size: 50px;
     color: var(--white);
     text-align: center;
@@ -241,18 +254,23 @@ footer p {
 
 .aboutPage-title {
     font-size: 30px;
-    margin: 40px 0 30px 0;
+    margin: 40px 0 30px 170px;
 }
 
 .about article {
     font-size: 20px;
+    margin: 0 170px;
 }
 
 .about article p:not(:last-child) {
     padding-bottom: 20px;
 }
 
-/* Courses page */
+.about article p a {
+    text-decoration: none;
+}
+
+/* CLASSES: ELVIRA */
 .courses-header {
     font-family: "RobotoExtraBold", sans-serif;
     font-size: 48px;
@@ -294,7 +312,7 @@ footer p {
     position: relative;
     visibility: hidden;
 }
-/* Elvira: Classes page */
+
 .courses article.course1 {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/high energy.jpg');
     background-position: center;
@@ -324,28 +342,205 @@ footer p {
     transition-duration: 1s;
 
 }
-
 .courses article:hover p{
     visibility: visible;
     transition: all 0.5s linear 1s;
 }
 
+/* CONTACT PAGE: NIELEN */
+.contact-page {
+    background-image: url("../images/contact-page-image.jpg");
+    min-height: 100vh;
+    align-content: center;
+}
+
+.contact-page-title {
+    text-align: center;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 36px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.contact-page-title > span {
+    color: var(--lightblue);
+    font-style: italic;
+}
+
+.contact-page-info {
+    margin: auto;
+    font-style: italic;
+    max-width: 50%;
+    color: red;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.contact-page-form {
+    font-family: "RobotoRegular", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-page-content {
+    background-color: var(--white);
+    width: 60%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.contact-form {
+    min-width: 75%;
+    padding-bottom: 3rem;
+}
+
+.contact-form > fieldset {
+    padding: 3rem 0.5rem;
+    border-radius: 8px;
+    background-color: var(--gray);
+    border-color: var(--gray);
+    border-style: unset;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 60%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-style: unset;
+    border-radius: 5px;
+}
+
+.form-label {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    font-size: 15px;
+}
+
+.form-reset-button {
+    all: unset;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px 3px;
+    border-color: red;
+    background-color: red;
+    color: var(--white);
+    transition: scale 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+
+.form-reset-button:hover {
+    scale: 105%;
+    background-color: var(--white);
+    color: red;
+}
+
+.form-submit-button {
+    all: unset;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px 3px;
+    border-color: var(--lightblue);
+    background-color: var(--lightblue);
+    color: var(--white);
+    transition: scale 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+
+.form-submit-button:hover {
+    scale: 105%;
+    background-color: var(--white);
+    color: var(--lightblue);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-input {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 
 /* Media Queries */
+@media all and (max-width: 1800px) {
+    /* ABOUT PAGE */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 700px;
+        left: 30%;
+    }
+}
+
+@media all and (max-width: 1440px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 700px;
+        top: 40%;
+        left: 27%;
+    }
+}
+
+@media all and (max-width: 1240px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 400px;
+        top: 27%;
+        left: 31%;
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 400px;
+        top: 20%;
+        left: 24%;
+        font-size: 40px;
+    }
+}
+
+
 @media all and (max-width: 750px) {
+    /* HOME */
     .header-content-navigation {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
+
     .header-content {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     .about-content-items {
         flex-direction: column;
     }
+
     .quote {
         display: flex;
         flex-wrap: wrap;
@@ -353,15 +548,103 @@ footer p {
         font-size: 25px;
         padding: 20px 30px;
     }
+
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 400px;
+        top: 23%;
+        left: 24%;
+        font-size: 40px;
+    }
+
+    .aboutPage-title {
+        margin-left: 10px;
+    }
+
+    .about article {
+        margin: 0 10px;
+    }
+
+    /* FOOTER */
     .action {
         padding: 20px 50px;
         max-width: 80%;
         margin-left: 10px;
         margin-right: 10px;
     }
+
     .action > .container {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+    }
+
+    /* CONTACT */
+    .contact-form > fieldset {
+        padding: unset;
+    }
+
+    .form-actions {
+        justify-content: space-between;
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-page-content {
+        width: 100%;
+    }
+
+    .contact-page {
+        background-image: none;
+    }
+}
+
+@media all and (max-width: 425px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 200px;
+        top: 21%;
+        left: 27%;
+        font-size: 20px;
+    }
+
+    .aboutPage-title {
+        margin-left: 10px;
+    }
+
+    .about article {
+        margin: 0 10px;
+    }
+}
+
+
+@media all and (max-width: 350px) {
+    /* HOME */
+    .header-menu > menu {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    /* CONTACT */
+    .contact-form {
+        padding-bottom: 0.5rem;
+    }
+
+    .contact-page-title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-page-info {
+        display: flex;
+        justify-items: center;
+        flex-wrap: wrap;
+        max-width: 80%;
     }
 }
