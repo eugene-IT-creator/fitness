@@ -38,9 +38,29 @@
     
                             <label class="form-label" for="email">Email:</label>
                             <input class="form-field" type="email" id="email" name="email" required>
-    
-                            <label class="form-label" for="message">Message:</label>
-                            <textarea class="form-field" id="message" name="message" rows="5" required></textarea>
+
+                            
+                            <p class="form-label">Please select the course(s) that you want to enquire about:</p>
+                            <section class="checkbox-group">
+                                <div>
+                                    <input class="checkbox-input" type="checkbox" id="high_energy_course" name="course" value="High Energy Course">
+                                    <label for="high_energy_course">High Energy Course</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox-input" type="checkbox" id="power_course" name="course" value="Power Course">
+                                    <label for="power_course">Power Course</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox-input" type="checkbox" id="body_and_mind_course" name="course" value="Body and Mind Course">
+                                    <label for="body_and_mind_course">Body and Mind Course</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox-input" type="checkbox" id="aerobic_course" name="course" value="Aerobic Course">
+                                    <label for="aerobic_course">Aerobic Course</label>
+                                </div>
+                            </section>
+                            <label class="form-label" for="message">Message (optional):</label>
+                            <textarea class="form-field" id="message" name="message" rows="5"></textarea>
     
                             <div class="form-actions">
                                 <button class="form-reset-button" type="reset">Reset</button>

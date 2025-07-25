@@ -30,9 +30,11 @@
     src: url("../fonts/RobotoExtraBold.ttf");
 }
 
+.main-container {
+    margin: 0 auto;
+}
 .container {
     margin: 0 auto;
-    /* max-width: 1200px; */
 }
 
 /* HEADER: ELVIRA */
@@ -310,6 +312,7 @@ footer p {
     border-radius: 5px;
 }
 .form-label {
+    font-size: 17px;
     margin-bottom: 5px;
 }
 .form-actions {
@@ -353,6 +356,17 @@ footer p {
     color: var(--lightblue);
 }
 
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-input {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
 /* Media Queries */
 @media all and (max-width: 750px) {
     .header-content-navigation {
@@ -395,7 +409,27 @@ footer p {
     .form-actions {
         justify-content: space-between;
     }
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media all and (max-width: 350px) {
-    
+    .header-menu > menu {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .contact-form {
+        padding-bottom: 0.5rem;
+    }
+    .contact-page-title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
