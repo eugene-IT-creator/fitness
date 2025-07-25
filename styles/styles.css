@@ -270,6 +270,82 @@ footer p {
     text-decoration: none;
 }
 
+/* CLASSES: ELVIRA */
+.courses-header {
+    font-family: "RobotoExtraBold", sans-serif;
+    font-size: 48px;
+    padding: 0% 10%;
+    color: var(--blue);
+}
+.courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.courses article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    max-width: 300px;
+    overflow: hidden;
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 10px 10px;
+    padding: 5%;
+    font-family: "RobotoRegular", sans-serif;
+
+}
+
+.courses article h2 {
+    font-family: "RobotoExtraBold", sans-serif;
+    font-size: 36px;
+    position: relative;
+    top: 40%;
+    padding: 2% 5%;
+}
+
+.courses article p {
+    font-size: 18px;
+    padding: 5% 5%;
+    position: relative;
+    visibility: hidden;
+}
+
+.courses article.course1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/high energy.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+.courses article.course2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/power.jpg");
+    background-position: right;
+    background-size:cover;
+}
+
+.courses article.course3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/body & mind.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+.courses article.course4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/aerobics.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+.courses article:hover h2 {
+    top: 0;
+    transition-duration: 1s;
+
+}
+.courses article:hover p{
+    visibility: visible;
+    transition: all 0.5s linear 1s;
+}
 
 /* CONTACT PAGE: NIELEN */
 .contact-page {
