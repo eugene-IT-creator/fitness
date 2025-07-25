@@ -294,6 +294,29 @@ footer p {
     position: relative;
     visibility: hidden;
 }
+.courses article.course1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/high energy.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+.courses article.course2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/power.jpg");
+    background-position: right;
+    background-size:cover;
+}
+
+.courses article.course3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/body & mind.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+.courses article.course4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/aerobics.jpg");
+    background-position: center;
+    background-size:cover;
+}
 
 
 /* Media Queries */
