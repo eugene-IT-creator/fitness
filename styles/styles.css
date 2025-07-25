@@ -424,6 +424,14 @@ footer p {
     border-radius: 5px;
 }
 
+.form-textarea {
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-style: unset;
+    border-radius: 5px;
+    resize: none;
+}
+
 .form-label {
     font-size: 17px;
     margin-bottom: 5px;
