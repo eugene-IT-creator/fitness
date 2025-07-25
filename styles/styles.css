@@ -318,6 +318,17 @@ footer p {
     background-size:cover;
 }
 
+.courses article:hover h2 {
+    top: 0;
+    transition-duration: 1s;
+
+}
+
+.courses article:hover p{
+    visibility: visible;
+    transition: all 0.5s linear 1s;
+}
+
 
 /* Media Queries */
 @media all and (max-width: 750px) {
