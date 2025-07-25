@@ -279,8 +279,9 @@ footer p {
 .courses-header {
     font-family: "RobotoExtraBold", sans-serif;
     font-size: 48px;
-    padding: 0% 10%;
+    padding: 0 10%;
     color: var(--blue);
+    margin-top: 20px;
 }
 .courses {
     display: flex;
