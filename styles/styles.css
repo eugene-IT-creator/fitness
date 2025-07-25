@@ -266,6 +266,10 @@ footer p {
     padding-bottom: 20px;
 }
 
+.about article p a {
+    text-decoration: none;
+}
+
 
 /* CONTACT PAGE: NIELEN */
 .contact-page {
