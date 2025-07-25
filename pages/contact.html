@@ -24,51 +24,61 @@
             </div>
         </header>
         <main class="contact-page">
-            <h1 class="contact-page-title">Get in touch <span>today!</span></h1>
-            <!-- <p class="contact-page-info">Fill out this form and a memeber from our team will be in touch with you via the provided email address within 24 hours!</> -->
-            <section class="contact-page-form">
-                <form class="contact-form" id="contact-us-form">
-                    <fieldset>
-                        <section class="form-fields">
-                            <label class="form-label" for="first_name">First Name(s):</label>
-                            <input class="form-field" type="text" id="first_name" name="first_name" required>
-
-                            <label class="form-label" for="last_name">Last Name:</label>
-                            <input class="form-field" type="text" id="last_name" name="last_name" required>
+            <section class="contact-page-content">
+                <h1 class="contact-page-title">Get in touch <span>today!</span></h1>
+                <p class="contact-page-info">Fill out this form and a memeber from our team will be in touch with you via
+                    the provided
+                    email address within 24 hours!</p>
+                <section class="contact-page-form">
+                    <form class="contact-form" id="contact-us-form">
+                        <fieldset>
+                            <section class="form-fields">
+                                <label class="form-label" for="first_name">First Name(s):</label>
+                                <input class="form-field" type="text" id="first_name" name="first_name" autocomplete="on"
+                                    required>
     
-                            <label class="form-label" for="email">Email:</label>
-                            <input class="form-field" type="email" id="email" name="email" required>
-
-                            
-                            <p class="form-label">Please select the course(s) that you want to enquire about:</p>
-                            <section class="checkbox-group">
-                                <div>
-                                    <input class="checkbox-input" type="checkbox" id="high_energy_course" name="course" value="High Energy Course">
-                                    <label for="high_energy_course">High Energy Course</label>
-                                </div>
-                                <div>
-                                    <input class="checkbox-input" type="checkbox" id="power_course" name="course" value="Power Course">
-                                    <label for="power_course">Power Course</label>
-                                </div>
-                                <div>
-                                    <input class="checkbox-input" type="checkbox" id="body_and_mind_course" name="course" value="Body and Mind Course">
-                                    <label for="body_and_mind_course">Body and Mind Course</label>
-                                </div>
-                                <div>
-                                    <input class="checkbox-input" type="checkbox" id="aerobic_course" name="course" value="Aerobic Course">
-                                    <label for="aerobic_course">Aerobic Course</label>
+                                <label class="form-label" for="last_name">Last Name:</label>
+                                <input class="form-field" type="text" id="last_name" name="last_name" autocomplete="on"
+                                    required>
+    
+                                <label class="form-label" for="email">Email:</label>
+                                <input class="form-field" type="email" id="email" name="email" autocomplete="on" required>
+    
+    
+                                <p class="form-label">Please select the course(s) that you want to enquire about:</p>
+                                <section class="checkbox-group">
+                                    <div>
+                                        <input class="checkbox-input" type="checkbox" id="high_energy_course" name="course"
+                                            value="High Energy Course">
+                                        <label for="high_energy_course">High Energy Course</label>
+                                    </div>
+                                    <div>
+                                        <input class="checkbox-input" type="checkbox" id="power_course" name="course"
+                                            value="Power Course">
+                                        <label for="power_course">Power Course</label>
+                                    </div>
+                                    <div>
+                                        <input class="checkbox-input" type="checkbox" id="body_and_mind_course"
+                                            name="course" value="Body and Mind Course">
+                                        <label for="body_and_mind_course">Body and Mind Course</label>
+                                    </div>
+                                    <div>
+                                        <input class="checkbox-input" type="checkbox" id="aerobic_course" name="course"
+                                            value="Aerobic Course">
+                                        <label for="aerobic_course">Aerobic Course</label>
+                                    </div>
+                                </section>
+                                <label class="form-label" for="message">Message (optional):</label>
+                                <textarea class="form-field" id="message" name="message" rows="5"></textarea>
+    
+                                <div class="form-actions">
+                                    <button class="form-reset-button" type="reset">Reset</button>
+                                    <button class="form-submit-button" type="submit">Submit</button>
                                 </div>
                             </section>
-                            <label class="form-label" for="message">Message (optional):</label>
-                            <textarea class="form-field" id="message" name="message" rows="5"></textarea>
-    
-                            <div class="form-actions">
-                                <button class="form-reset-button" type="reset">Reset</button>
-                                <button class="form-submit-button" type="submit">Submit</button>
-                            </div>
-                        </section>
-                    </fieldset>
-                </form>
+                        </fieldset>
+                    </form>
+                </section>
             </section>
         </main>
         <footer>

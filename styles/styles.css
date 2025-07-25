@@ -30,9 +30,6 @@
     src: url("../fonts/RobotoExtraBold.ttf");
 }
 
-.main-container {
-    margin: 0 auto;
-}
 .container {
     margin: 0 auto;
 }
@@ -261,9 +258,11 @@ footer p {
 }
 /* CONTACT PAGE: NIELEN */
 .contact-page {
+    background-image: url("../images/contact-page-image.jpg");
     min-height: 100vh;
     align-content: center;
 }
+
 .contact-page-title {
     text-align: center;
     font-family: "RobotoBold", sans-serif;
@@ -276,18 +275,27 @@ footer p {
     font-style: italic;
 }
 .contact-page-info {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    font-style: italic;
+    max-width: 50%;
+    color: red;
     font-family: "RobotoRegular", sans-serif;
     font-size: 20px;
+    margin-bottom: 2rem;
 }
 .contact-page-form {
     font-family: "RobotoRegular", sans-serif;
     display: flex;
     justify-content: center;
 }
+.contact-page-content {
+    background-color: var(--white);
+    width: 60%;
+    margin: auto;
+    border-radius: 8px;
+}
 .contact-form {
-    min-width: 50%;
+    min-width: 75%;
     padding-bottom: 3rem;
 }
 .contact-form > fieldset {
@@ -400,9 +408,7 @@ footer p {
         align-items: center;
         gap: 40px;
     }
-    .contact-page-form {
-        display: block;
-    }
+   
     .contact-form > fieldset {
         padding: unset;
     }
@@ -412,6 +418,12 @@ footer p {
     .checkbox-group {
         display: flex;
         flex-direction: column;
+    }
+    .contact-page-content {
+        width: 100%;
+    }
+    .contact-page {
+        background-image: none;
     }
 }
 @media all and (max-width: 350px) {
@@ -427,9 +439,10 @@ footer p {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .main-container {
+    .contact-page-info {
         display: flex;
+        justify-items: center;
         flex-wrap: wrap;
-        flex-direction: column;
+        max-width: 80%;
     }
 }
