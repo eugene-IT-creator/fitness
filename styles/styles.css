@@ -71,6 +71,11 @@ header .header-menu li>a {
     color: var(--white);
     font-size: 18px;
     text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+header .header-menu li>a:hover {
+    color: var(--lightblue);
 }
 
 .header-content {
@@ -106,6 +111,7 @@ header .header-menu li>a {
     font-size: 18px;
     border: 0px;
 }
+
 
 
 /* MAIN: EUGENE */
@@ -380,4 +386,16 @@ footer p {
         align-items: center;
         gap: 40px;
     }
+    .contact-page-form {
+        display: block;
+    }
+    .contact-form > fieldset {
+        padding: unset;
+    }
+    .form-actions {
+        justify-content: space-between;
+    }
+}
+@media all and (max-width: 350px) {
+    
 }
