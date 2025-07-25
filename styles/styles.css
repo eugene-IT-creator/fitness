@@ -495,7 +495,7 @@ footer p {
 
 /* SUBMISSION */
 .submission {
-    height: 100vh;
+    height: 74vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
