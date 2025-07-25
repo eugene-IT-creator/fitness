@@ -32,7 +32,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 /* HEADER: ELVIRA */
@@ -208,7 +208,6 @@ footer {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 5px;
 }
 
 footer p {
@@ -252,8 +251,101 @@ footer p {
 .about article p:not(:last-child) {
     padding-bottom: 20px;
 }
-
-
+/* CONTACT PAGE: NIELEN */
+.contact-page {
+    min-height: 100vh;
+    align-content: center;
+}
+.contact-page-title {
+    text-align: center;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 36px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.contact-page-title > span {
+    color: var(--lightblue);
+    font-style: italic;
+}
+.contact-page-info {
+    display: flex;
+    justify-content: center;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 20px;
+}
+.contact-page-form {
+    font-family: "RobotoRegular", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.contact-form {
+    min-width: 50%;
+    padding-bottom: 3rem;
+}
+.contact-form > fieldset {
+    padding: 3rem 0.5rem;
+    border-radius: 8px;
+    background-color: var(--gray);
+    border-color: var(--gray);
+    border-style: unset;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 60%;
+    margin: 0 auto;
+    width: 100%;
+}
+.form-field {
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-style: unset;
+    border-radius: 5px;
+}
+.form-label {
+    margin-bottom: 5px;
+}
+.form-actions {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    font-size: 15px;
+}
+.form-reset-button {
+    all: unset;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px 3px;
+    border-color: red;
+    background-color: red;
+    color: var(--white);
+    transition: scale 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+.form-reset-button:hover {
+    scale: 105%;
+    background-color: var(--white);
+    color: red;
+}
+.form-submit-button {
+    all: unset;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px 3px;
+    border-color: var(--lightblue);
+    background-color: var(--lightblue);
+    color: var(--white);
+    transition: scale 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+.form-submit-button:hover {
+    scale: 105%;
+    background-color: var(--white);
+    color: var(--lightblue);
+}
 
 /* Media Queries */
 @media all and (max-width: 750px) {
