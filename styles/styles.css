@@ -101,9 +101,11 @@ header .header-menu li > a:hover {
 }
 
 .header-content-info p {
+    width: 500px;
     font-size: 18px;
     color: var(--gray);
-    padding: 10px 0px;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
 .header-content-info > .container a {
@@ -489,7 +491,7 @@ footer p {
     .aboutPage-slogan {
         position: absolute;
         width: 700px;
-        left: 30%;
+        left: 27%;
     }
 }
 
