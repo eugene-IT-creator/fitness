@@ -493,6 +493,35 @@ footer p {
     margin-top: 0.5rem;
 }
 
+/* SUBMISSION */
+.submission {
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2% 5%;
+}
+
+.submission h1 {
+    color: var(--lightblue);
+    font-family: "RobotoExtraBold";
+    font-size: 48px;
+    margin-bottom: 2%;
+}
+
+.submission p {
+    font-family: "RobotoRegular";
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+
+.submission a {
+    font-family: "RobotoRegular";
+    font-size: 18px;
+}
+
+
 
 /* Media Queries */
 @media all and (max-width: 1800px) {
