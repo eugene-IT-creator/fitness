@@ -32,7 +32,6 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 /* HEADER: ELVIRA */
@@ -71,6 +70,11 @@ header .header-menu li>a {
     color: var(--white);
     font-size: 18px;
     text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+header .header-menu li>a:hover {
+    color: var(--lightblue);
 }
 
 .header-content {
@@ -106,6 +110,7 @@ header .header-menu li>a {
     font-size: 18px;
     border: 0px;
 }
+
 
 
 /* MAIN: EUGENE */
@@ -208,7 +213,6 @@ footer {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 5px;
 }
 
 footer p {
@@ -252,7 +256,123 @@ footer p {
 .about article p:not(:last-child) {
     padding-bottom: 20px;
 }
+/* CONTACT PAGE: NIELEN */
+.contact-page {
+    background-image: url("../images/contact-page-image.jpg");
+    min-height: 100vh;
+    align-content: center;
+}
 
+.contact-page-title {
+    text-align: center;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 36px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.contact-page-title > span {
+    color: var(--lightblue);
+    font-style: italic;
+}
+.contact-page-info {
+    margin: auto;
+    font-style: italic;
+    max-width: 50%;
+    color: red;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.contact-page-form {
+    font-family: "RobotoRegular", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.contact-page-content {
+    background-color: var(--white);
+    width: 60%;
+    margin: auto;
+    border-radius: 8px;
+}
+.contact-form {
+    min-width: 75%;
+    padding-bottom: 3rem;
+}
+.contact-form > fieldset {
+    padding: 3rem 0.5rem;
+    border-radius: 8px;
+    background-color: var(--gray);
+    border-color: var(--gray);
+    border-style: unset;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 60%;
+    margin: 0 auto;
+    width: 100%;
+}
+.form-field {
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-style: unset;
+    border-radius: 5px;
+}
+.form-label {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.form-actions {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    font-size: 15px;
+}
+.form-reset-button {
+    all: unset;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px 3px;
+    border-color: red;
+    background-color: red;
+    color: var(--white);
+    transition: scale 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+.form-reset-button:hover {
+    scale: 105%;
+    background-color: var(--white);
+    color: red;
+}
+.form-submit-button {
+    all: unset;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px 3px;
+    border-color: var(--lightblue);
+    background-color: var(--lightblue);
+    color: var(--white);
+    transition: scale 0.3s ease;
+    transition: background-color 0.1s ease;
+}
+.form-submit-button:hover {
+    scale: 105%;
+    background-color: var(--white);
+    color: var(--lightblue);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-input {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
 
 
 /* Media Queries */
@@ -287,5 +407,42 @@ footer p {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+    }
+   
+    .contact-form > fieldset {
+        padding: unset;
+    }
+    .form-actions {
+        justify-content: space-between;
+    }
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-page-content {
+        width: 100%;
+    }
+    .contact-page {
+        background-image: none;
+    }
+}
+@media all and (max-width: 350px) {
+    .header-menu > menu {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .contact-form {
+        padding-bottom: 0.5rem;
+    }
+    .contact-page-title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-page-info {
+        display: flex;
+        justify-items: center;
+        flex-wrap: wrap;
+        max-width: 80%;
     }
 }
