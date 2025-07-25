@@ -376,7 +376,7 @@ footer p {
     margin: auto;
     font-style: italic;
     max-width: 50%;
-    color: red;
+    color: var(--lightblue);
     font-family: "RobotoRegular", sans-serif;
     font-size: 20px;
     margin-bottom: 2rem;
