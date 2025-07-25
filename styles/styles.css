@@ -248,16 +248,19 @@ footer p {
     top: 30%;
     left: 24%;
     font-size: 50px;
+    font-family: "RobotoBold", sans-serif;
     color: var(--white);
     text-align: center;
 }
 
 .aboutPage-title {
     font-size: 30px;
+    font-family: "RobotoBold", sans-serif;
     margin: 40px 0 30px 170px;
 }
 
 .about article {
+    font-family: "RobotoRegular", sans-serif;
     font-size: 20px;
     margin: 0 170px;
 }
@@ -600,6 +603,13 @@ footer p {
 
     .contact-page {
         background-image: none;
+    }
+    /* CLASSES */
+    .courses article p {
+        visibility: visible;
+    }
+    .courses article h2 {
+        top: 0;
     }
 }
 
