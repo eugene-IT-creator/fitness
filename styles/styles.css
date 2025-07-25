@@ -32,7 +32,6 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 /* HEADER: ELVIRA */
@@ -253,6 +252,7 @@ footer p {
     padding-bottom: 20px;
 }
 
+/* Courses page */
 .courses-header {
     font-family: "RobotoExtraBold", sans-serif;
     font-size: 48px;
@@ -294,6 +294,7 @@ footer p {
     position: relative;
     visibility: hidden;
 }
+/* Elvira: Classes page */
 .courses article.course1 {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/high energy.jpg');
     background-position: center;
