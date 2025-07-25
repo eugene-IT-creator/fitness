@@ -253,6 +253,47 @@ footer p {
     padding-bottom: 20px;
 }
 
+.courses-header {
+    font-family: "RobotoExtraBold", sans-serif;
+    font-size: 48px;
+    padding: 0% 10%;
+    color: var(--blue);
+}
+.courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.courses article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    max-width: 300px;
+    overflow: hidden;
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 10px 10px;
+    padding: 5%;
+    font-family: "RobotoRegular", sans-serif;
+
+}
+
+.courses article h2 {
+    font-family: "RobotoExtraBold", sans-serif;
+    font-size: 36px;
+    position: relative;
+    top: 40%;
+    padding: 2% 5%;
+}
+
+.courses article p {
+    font-size: 18px;
+    padding: 5% 5%;
+    position: relative;
+    visibility: hidden;
+}
 
 
 /* Media Queries */
