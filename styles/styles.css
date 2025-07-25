@@ -112,7 +112,7 @@ header .header-menu li > a:hover {
     background-color: var(--lightblue);
     color: var(--white);
     font-size: 18px;
-    border: 0px;
+    border: 0;
 }
 
 
@@ -496,6 +496,10 @@ footer p {
 }
 
 @media all and (max-width: 1440px) {
+    /* HEADER */
+    .header-content-info p {
+        width: 350px;
+    }
     /* ABOUT */
     .aboutPage-slogan {
         position: absolute;
@@ -506,6 +510,10 @@ footer p {
 }
 
 @media all and (max-width: 1240px) {
+    /* HEADER */
+    .header-content-info p {
+        width: 260px;
+    }
     /* ABOUT */
     .aboutPage-slogan {
         position: absolute;
