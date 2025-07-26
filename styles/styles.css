@@ -102,7 +102,7 @@ header .header-menu li > a:hover {
 
 .header-content-info p {
     width: 500px;
-    font-size: 18px;
+    font-family: "RobotoRegular", sans-serif;
     color: var(--gray);
     padding: 10px 0;
     margin-bottom: 20px;
@@ -380,7 +380,12 @@ footer p {
     color: var(--lightblue);
     font-family: "RobotoRegular", sans-serif;
     font-size: 20px;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.form-checkbox-legend {
+    font-style: italic;
+    font-size: 14px;
+    color: orange;
 }
 
 .contact-page-form {
@@ -391,7 +396,7 @@ footer p {
 
 .contact-page-content {
     background-color: var(--white);
-    width: 60%;
+    max-width: 50%;
     margin: auto;
     border-radius: 8px;
 }
@@ -401,18 +406,21 @@ footer p {
     padding-bottom: 3rem;
 }
 
-.contact-form > fieldset {
-    padding: 3rem 0.5rem;
+.form-section {
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
-    background-color: var(--gray);
-    border-color: var(--gray);
     border-style: unset;
 }
-
+.form-separator {
+    max-width: 65%;
+    margin: auto;
+    border-style: solid;
+    color: var(--gray);
+}
 .form-fields {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 60%;
     margin: 0 auto;
     width: 100%;
@@ -435,7 +443,7 @@ footer p {
 
 .form-label {
     font-size: 17px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .form-actions {
@@ -443,6 +451,17 @@ footer p {
     justify-content: end;
     gap: 1rem;
     font-size: 15px;
+    width: 60%;
+    margin: auto;
+}
+
+.form-section-heading {
+    width: 65%;
+    margin: auto;
+    color: var(--blue);
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 0.25rem;
 }
 
 .form-reset-button {
@@ -486,6 +505,8 @@ footer p {
 .checkbox-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0rem 2rem;
+    margin: 0.5rem;
 }
 
 .checkbox-input {
@@ -544,6 +565,9 @@ footer p {
         width: 700px;
         top: 40%;
         left: 27%;
+    }
+    .contact-page-content {
+        max-width: 75%;
     }
 }
 
@@ -628,11 +652,12 @@ footer p {
     .action > .container {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 1.5rem;
+        text-align: center;
     }
 
     /* CONTACT */
-    .contact-form > fieldset {
+    .form-section {
         padding: unset;
     }
 
@@ -648,10 +673,18 @@ footer p {
     .contact-page-content {
         width: 100%;
     }
+    .contact-page-info {
+        max-width: 70%;
+    }
 
     .contact-page {
         background-image: none;
+        background-color: var(--white);
     }
+    .contact-page-content {
+        max-width: 100%;
+    }
+
     /* CLASSES */
     .courses article p {
         visibility: visible;
