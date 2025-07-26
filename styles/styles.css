@@ -380,10 +380,12 @@ footer p {
     color: var(--lightblue);
     font-family: "RobotoRegular", sans-serif;
     font-size: 20px;
+    padding-bottom: 2rem;
 }
 .form-checkbox-legend {
     font-style: italic;
     font-size: 14px;
+    color: orange;
 }
 
 .contact-page-form {
@@ -404,16 +406,21 @@ footer p {
     padding-bottom: 3rem;
 }
 
-.contact-form > fieldset {
+.form-section {
     padding: 0.5rem 0.5rem;
     border-radius: 8px;
     border-style: unset;
 }
-
+.form-separator {
+    max-width: 65%;
+    margin: auto;
+    border-style: solid;
+    color: var(--gray);
+}
 .form-fields {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 60%;
     margin: 0 auto;
     width: 100%;
@@ -436,7 +443,7 @@ footer p {
 
 .form-label {
     font-size: 17px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .form-actions {
@@ -444,6 +451,17 @@ footer p {
     justify-content: end;
     gap: 1rem;
     font-size: 15px;
+    width: 60%;
+    margin: auto;
+}
+
+.form-section-heading {
+    width: 65%;
+    margin: auto;
+    color: var(--blue);
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 0.25rem;
 }
 
 .form-reset-button {
@@ -488,6 +506,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0rem 2rem;
+    margin: 0.5rem;
 }
 
 .checkbox-input {
@@ -637,7 +656,7 @@ footer p {
     }
 
     /* CONTACT */
-    .contact-form > fieldset {
+    .form-section {
         padding: unset;
     }
 
