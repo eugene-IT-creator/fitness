@@ -26,30 +26,36 @@
         <main class="contact-page">
             <section class="contact-page-content">
                 <h1 class="contact-page-title">Get in touch <span>today!</span></h1>
-                <p class="contact-page-info">Fill out this form and a memeber from our team will be in touch with you via
+                <p class="contact-page-info">Fill out this form and a memeber from our team will be in touch with you
+                    via
                     the provided
                     email address within 24 hours!</p>
                 <section class="contact-page-form">
                     <form class="contact-form" id="contact-us-form" action="./submission.html">
                         <fieldset>
                             <section class="form-fields">
-                                <label class="form-label" for="first_name">First Name(s):</label>
-                                <input class="form-field" type="text" id="first_name" name="first_name" autocomplete="on"
-                                    required>
-    
+                                <label class="form-label" for="first_name">First Name:</label>
+                                <input class="form-field" type="text" id="first_name" name="first_name" placeholder="Enter you first name"
+                                    autocomplete="on" required>
+
                                 <label class="form-label" for="last_name">Last Name:</label>
-                                <input class="form-field" type="text" id="last_name" name="last_name" autocomplete="on"
+                                <input class="form-field" type="text" id="last_name" name="last_name" placeholder="Enter your last name" autocomplete="on"
                                     required>
-    
+
                                 <label class="form-label" for="email">Email:</label>
-                                <input class="form-field" type="email" id="email" name="email" autocomplete="on" required>
-    
-    
-                                <p class="form-label">Please select the course(s) that you want to enquire about:</p>
+                                <input class="form-field" type="email" id="email" name="email" placeholder="Enter a valid email address" autocomplete="on"
+                                    required>
+                                <label class="form-label" for="email_confirmation">Email Confirmation:</label>
+                                <input class="form-field" type="email" id="email_confirmation" name="email_confirmation" placeholder="Please confirm your email address"
+                                    autocomplete="on" required>
+
+                                <p class="form-label">Please select the course(s) that you are interested in:</p>
+                                <legend class="form-checkbox-legend">Select the classes you would like to enquire about. You are allowed to select more than one
+                                    class.</legend>
                                 <section class="checkbox-group">
                                     <div>
-                                        <input class="checkbox-input" type="checkbox" id="high_energy_course" name="course"
-                                            value="High Energy Course">
+                                        <input class="checkbox-input" type="checkbox" id="high_energy_course"
+                                            name="course" value="High Energy Course">
                                         <label for="high_energy_course">High Energy Course</label>
                                     </div>
                                     <div>
@@ -70,7 +76,7 @@
                                 </section>
                                 <label class="form-label" for="message">Message (optional):</label>
                                 <textarea class="form-textarea" id="message" name="message" rows="5"></textarea>
-    
+
                                 <div class="form-actions">
                                     <button class="form-reset-button" type="reset">Reset</button>
                                     <button class="form-submit-button" type="submit">Submit</button>

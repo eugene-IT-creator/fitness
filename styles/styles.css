@@ -102,7 +102,7 @@ header .header-menu li > a:hover {
 
 .header-content-info p {
     width: 500px;
-    font-size: 18px;
+    font-family: "RobotoRegular", sans-serif;
     color: var(--gray);
     padding: 10px 0;
     margin-bottom: 20px;
@@ -380,7 +380,10 @@ footer p {
     color: var(--lightblue);
     font-family: "RobotoRegular", sans-serif;
     font-size: 20px;
-    margin-bottom: 2rem;
+}
+.form-checkbox-legend {
+    font-style: italic;
+    font-size: 14px;
 }
 
 .contact-page-form {
@@ -391,7 +394,7 @@ footer p {
 
 .contact-page-content {
     background-color: var(--white);
-    width: 60%;
+    max-width: 50%;
     margin: auto;
     border-radius: 8px;
 }
@@ -402,10 +405,8 @@ footer p {
 }
 
 .contact-form > fieldset {
-    padding: 3rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
-    background-color: var(--gray);
-    border-color: var(--gray);
     border-style: unset;
 }
 
@@ -486,6 +487,7 @@ footer p {
 .checkbox-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0rem 2rem;
 }
 
 .checkbox-input {
@@ -544,6 +546,9 @@ footer p {
         width: 700px;
         top: 40%;
         left: 27%;
+    }
+    .contact-page-content {
+        max-width: 75%;
     }
 }
 
@@ -648,10 +653,18 @@ footer p {
     .contact-page-content {
         width: 100%;
     }
+    .contact-page-info {
+        max-width: 70%;
+    }
 
     .contact-page {
         background-image: none;
+        background-color: var(--white);
     }
+    .contact-page-content {
+        max-width: 100%;
+    }
+
     /* CLASSES */
     .courses article p {
         visibility: visible;
