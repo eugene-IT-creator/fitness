@@ -456,7 +456,7 @@ footer p {
 }
 
 .form-section-heading {
-    width: 65%;
+    max-width: 65%;
     margin: auto;
     color: var(--blue);
     font-size: 19px;
@@ -684,6 +684,16 @@ footer p {
     .contact-page-content {
         max-width: 100%;
     }
+    .form-fields {
+        max-width: 90%;
+    }
+    .form-section-heading {
+        max-width: 95%;
+    }
+    .form-separator {
+        max-width: 95%;
+    }
+
 
     /* CLASSES */
     .courses article p {
