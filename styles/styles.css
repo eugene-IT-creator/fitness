@@ -44,8 +44,10 @@ header {
 .header-content-navigation {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 1rem 1rem;
     align-items: baseline;
+    position: sticky;
+    top: 0;
 }
 
 .header-logo {
@@ -175,7 +177,7 @@ header .header-menu li > a:hover {
     padding: 50px 100px;
     max-width: 65%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .action > .container {
@@ -606,6 +608,11 @@ footer p {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    .header-menu {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .header-content {
