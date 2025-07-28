@@ -106,7 +106,7 @@ header .header-menu li > a:hover {
     font-size: 18px;
     color: var(--gray);
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin: 5px 0px;
 }
 
 .header-content-info > .container a {
@@ -114,6 +114,7 @@ header .header-menu li > a:hover {
     color: var(--white);
     font-size: 18px;
     border: 0;
+    margin-bottom: 5px;
 }
 
 
