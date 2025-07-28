@@ -48,6 +48,7 @@ header {
     align-items: baseline;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .header-logo {
@@ -233,6 +234,10 @@ footer p {
 .about-header {
     display: block;
     padding: 0;
+}
+
+.about-image-section > picture {
+    padding: 1% 5%;
 }
 
 .aboutPage {
