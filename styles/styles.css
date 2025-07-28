@@ -54,7 +54,7 @@ header {
     color: var(--white);
 }
 
-.header-menu menu {
+.header-menu {
     display: flex;
     flex-direction: row;
     font-family: "RobotoRegular", sans-serif;
@@ -78,10 +78,11 @@ header .header-menu li > a:hover {
 }
 
 .header-content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 10% 0%;;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    background-color: var(--blue);
+    padding: 10% 10%;
 }
 
 .header-content img {
@@ -105,7 +106,7 @@ header .header-menu li > a:hover {
     font-family: "RobotoRegular", sans-serif;
     color: var(--gray);
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin: 5px 0px;
 }
 
 .header-content-info > .container a {
@@ -113,6 +114,7 @@ header .header-menu li > a:hover {
     color: var(--white);
     font-size: 18px;
     border: 0;
+    margin-bottom: 5px;
 }
 
 
@@ -173,7 +175,7 @@ header .header-menu li > a:hover {
     padding: 50px 100px;
     max-width: 65%;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .action > .container {
@@ -282,13 +284,14 @@ footer p {
     padding: 0 10%;
     color: var(--blue);
     margin-top: 20px;
+    text-align: center;
 }
 .courses {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    margin-bottom: 20px;
 }
 .courses article {
     display: flex;
@@ -315,7 +318,6 @@ footer p {
 .courses article p {
     font-size: 18px;
     padding: 5% 5%;
-    position: relative;
     visibility: hidden;
 }
 
