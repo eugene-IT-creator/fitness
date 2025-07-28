@@ -284,6 +284,7 @@ footer p {
     padding: 0 10%;
     color: var(--blue);
     margin-top: 20px;
+    text-align: center;
 }
 .courses {
     display: flex;
