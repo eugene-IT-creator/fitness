@@ -291,7 +291,7 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    margin-bottom: 20px;
 }
 .courses article {
     display: flex;
