@@ -554,12 +554,23 @@ footer p {
 
 
 /* Media Queries */
+@media all and (max-width: 1920px) {
+    /* ABOUT PAGE */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 700px;
+        left: 35%;
+        top: 43%;
+    }
+}
+
 @media all and (max-width: 1800px) {
     /* ABOUT PAGE */
     .aboutPage-slogan {
         position: absolute;
         width: 700px;
-        left: 27%;
+        left: 28%;
+        top: 40%;
     }
 }
 
@@ -572,13 +583,14 @@ footer p {
     .aboutPage-slogan {
         position: absolute;
         width: 700px;
-        top: 40%;
+        top: 45%;
         left: 27%;
     }
     .contact-page-content {
         max-width: 75%;
     }
 }
+
 
 @media all and (max-width: 1240px) {
     /* HEADER */
@@ -595,14 +607,23 @@ footer p {
     }
 }
 
+@media all and (max-width: 1024px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        width: 400px;
+        top: 35%;
+        left: 32%;
+    }
+}
+
 @media all and (max-width: 768px) {
     /* ABOUT */
     .aboutPage-slogan {
         position: absolute;
         width: 400px;
-        top: 20%;
-        left: 24%;
-        font-size: 40px;
+        top: 30%;
+        left: 25%;
     }
 }
 
@@ -723,7 +744,7 @@ footer p {
     .aboutPage-slogan {
         position: absolute;
         width: 200px;
-        top: 21%;
+        top: 28%;
         left: 27%;
         font-size: 20px;
     }
@@ -734,6 +755,14 @@ footer p {
 
     .about article {
         margin: 0 10px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        left: 24%;
     }
 }
 
@@ -761,5 +790,14 @@ footer p {
         justify-items: center;
         flex-wrap: wrap;
         max-width: 80%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    /* ABOUT */
+    .aboutPage-slogan {
+        position: absolute;
+        top: 29%;
+        left: 20%;
     }
 }
