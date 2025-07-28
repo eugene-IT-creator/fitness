@@ -54,7 +54,7 @@ header {
     color: var(--white);
 }
 
-.header-menu menu {
+.header-menu {
     display: flex;
     flex-direction: row;
     font-family: "RobotoRegular", sans-serif;
