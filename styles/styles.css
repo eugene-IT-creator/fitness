@@ -69,14 +69,14 @@ header .header-menu li {
     margin: 0px 10px;
 }
 
-header .header-menu li > a {
+header .header-menu li>a {
     color: var(--white);
     font-size: 18px;
     text-decoration: none;
     transition: color 0.1s ease;
 }
 
-header .header-menu li > a:hover {
+header .header-menu li>a:hover {
     color: var(--lightblue);
 }
 
@@ -112,7 +112,7 @@ header .header-menu li > a:hover {
     margin: 5px 0px;
 }
 
-.header-content-info > .container a {
+.header-content-info>.container a {
     background-color: var(--lightblue);
     color: var(--white);
     font-size: 18px;
@@ -181,7 +181,7 @@ header .header-menu li > a:hover {
     margin-bottom: 60px;
 }
 
-.action > .container {
+.action>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,7 +196,7 @@ header .header-menu li > a:hover {
     font-family: "RobotoRegular", sans-serif;
 }
 
-.container > .sign-up-link {
+.container>.sign-up-link {
     all: unset;
     background-color: inherit;
     color: inherit;
@@ -210,7 +210,7 @@ header .header-menu li > a:hover {
     transition: scale 0.3s ease;
 }
 
-.container > .sign-up-link:hover {
+.container>.sign-up-link:hover {
     background-color: var(--white);
     color: var(--lightblue);
     scale: 105%;
@@ -236,7 +236,7 @@ footer p {
     padding: 0;
 }
 
-.about-image-section > picture {
+.about-image-section>picture {
     padding: 1% 5%;
 }
 
@@ -245,23 +245,33 @@ footer p {
     padding: 0 20px;
 }
 
-.aboutPage-img {
-    width: 100%;
-    margin: 20px 0 30px 0;
-    opacity: 0.3;
-    position: relative;
-    border-radius: 15px;
-}
 
 .aboutPage-slogan {
-    position: absolute;
-    width: 1000px;
-    top: 30%;
-    left: 24%;
-    font-size: 50px;
-    font-family: "RobotoBold", sans-serif;
-    color: var(--white);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    font-family: "RobotoBold", sans-serif;
+    position: absolute;
+
+}
+
+.aboutPage-slogan p {
+    margin: 0 200px;
+    width: 1000px;
+    color: var(--white);
+    font-size: 50px;
+}
+
+.main-img {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    /* margin: 20px 0 30px 0; */
+    opacity: 0.3;
+    object-fit: cover;
 }
 
 .aboutPage-title {
@@ -293,6 +303,7 @@ footer p {
     margin-top: 20px;
     text-align: center;
 }
+
 .courses {
     display: flex;
     flex-direction: row;
@@ -300,6 +311,7 @@ footer p {
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
+
 .courses article {
     display: flex;
     flex-direction: column;
@@ -329,27 +341,27 @@ footer p {
 }
 
 .courses article.course1 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/high energy.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/high energy.jpg');
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
 .courses article.course2 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/power.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/power.jpg");
     background-position: right;
-    background-size:cover;
+    background-size: cover;
 }
 
 .courses article.course3 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/body & mind.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/body & mind.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
 .courses article.course4 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/aerobics.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/aerobics.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
 .courses article:hover h2 {
@@ -357,7 +369,8 @@ footer p {
     transition-duration: 1s;
 
 }
-.courses article:hover p{
+
+.courses article:hover p {
     visibility: visible;
     transition: all 0.5s linear 1s;
 }
@@ -377,7 +390,7 @@ footer p {
     padding-top: 2rem;
 }
 
-.contact-page-title > span {
+.contact-page-title>span {
     color: var(--lightblue);
     font-style: italic;
 }
@@ -391,6 +404,7 @@ footer p {
     font-size: 20px;
     padding-bottom: 2rem;
 }
+
 .form-checkbox-legend {
     font-style: italic;
     font-size: 14px;
@@ -420,12 +434,14 @@ footer p {
     border-radius: 8px;
     border-style: unset;
 }
+
 .form-separator {
     max-width: 65%;
     margin: auto;
     border-style: solid;
     color: var(--gray);
 }
+
 .form-fields {
     display: flex;
     flex-direction: column;
@@ -554,38 +570,13 @@ footer p {
 
 
 /* Media Queries */
-@media all and (max-width: 1920px) {
-    /* ABOUT PAGE */
-    .aboutPage-slogan {
-        position: absolute;
-        width: 700px;
-        left: 35%;
-        top: 43%;
-    }
-}
-
-@media all and (max-width: 1800px) {
-    /* ABOUT PAGE */
-    .aboutPage-slogan {
-        position: absolute;
-        width: 700px;
-        left: 28%;
-        top: 40%;
-    }
-}
-
 @media all and (max-width: 1440px) {
+
     /* HEADER */
     .header-content-info p {
         width: 350px;
     }
-    /* ABOUT */
-    .aboutPage-slogan {
-        position: absolute;
-        width: 700px;
-        top: 45%;
-        left: 27%;
-    }
+
     .contact-page-content {
         max-width: 75%;
     }
@@ -593,42 +584,29 @@ footer p {
 
 
 @media all and (max-width: 1240px) {
+
     /* HEADER */
     .header-content-info p {
         width: 260px;
     }
+
     /* ABOUT */
     .aboutPage-slogan {
-        position: absolute;
-        width: 400px;
-        top: 27%;
-        left: 31%;
         font-size: 40px;
     }
 }
 
-@media all and (max-width: 1024px) {
-    /* ABOUT */
-    .aboutPage-slogan {
-        position: absolute;
-        width: 400px;
-        top: 35%;
-        left: 32%;
-    }
-}
-
 @media all and (max-width: 768px) {
+
     /* ABOUT */
     .aboutPage-slogan {
-        position: absolute;
-        width: 400px;
-        top: 30%;
-        left: 25%;
+        font-size: 40px;
     }
 }
 
 
 @media all and (max-width: 750px) {
+
     /* HOME */
     .header-content-navigation {
         flex-direction: column;
@@ -661,10 +639,6 @@ footer p {
 
     /* ABOUT */
     .aboutPage-slogan {
-        position: absolute;
-        width: 400px;
-        top: 23%;
-        left: 24%;
         font-size: 40px;
     }
 
@@ -684,7 +658,7 @@ footer p {
         margin-right: 10px;
     }
 
-    .action > .container {
+    .action>.container {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
@@ -708,6 +682,7 @@ footer p {
     .contact-page-content {
         width: 100%;
     }
+
     .contact-page-info {
         max-width: 70%;
     }
@@ -716,15 +691,19 @@ footer p {
         background-image: none;
         background-color: var(--white);
     }
+
     .contact-page-content {
         max-width: 100%;
     }
+
     .form-fields {
         max-width: 85%;
     }
+
     .form-section-heading {
         max-width: 90%;
     }
+
     .form-separator {
         max-width: 90%;
     }
@@ -734,19 +713,17 @@ footer p {
     .courses article p {
         visibility: visible;
     }
+
     .courses article h2 {
         top: 0;
     }
 }
 
 @media all and (max-width: 425px) {
+
     /* ABOUT */
-    .aboutPage-slogan {
-        position: absolute;
-        width: 200px;
-        top: 28%;
-        left: 27%;
-        font-size: 20px;
+    .aboutPage-slogan p {
+        font-size: 30px;
     }
 
     .aboutPage-title {
@@ -758,18 +735,11 @@ footer p {
     }
 }
 
-@media all and (max-width: 375px) {
-    /* ABOUT */
-    .aboutPage-slogan {
-        position: absolute;
-        left: 24%;
-    }
-}
-
 
 @media all and (max-width: 350px) {
+
     /* HOME */
-    .header-menu > menu {
+    .header-menu>menu {
         flex-wrap: wrap;
         gap: 5px;
     }
@@ -790,14 +760,5 @@ footer p {
         justify-items: center;
         flex-wrap: wrap;
         max-width: 80%;
-    }
-}
-
-@media all and (max-width: 320px) {
-    /* ABOUT */
-    .aboutPage-slogan {
-        position: absolute;
-        top: 29%;
-        left: 20%;
     }
 }
